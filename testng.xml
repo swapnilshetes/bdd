@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="CrossDeviceSuite" parallel="tests">
+<test name="Android Test">
+    <parameter name="device" value="539e3ee5"></parameter>	
+  	<parameter name="app_package" value="com.curvefish.widgets.brightnesslevel"></parameter>	
+  	<parameter name="activity" value="com.curvefish.widgets.brightnesslevel.BrightnessSelect"></parameter>	
+  	<parameter name="version" value="7.1.2"></parameter>	
+  	<parameter name="appiumServer" value="http://127.0.0.1:4723/wd/hub"></parameter>
+    <classes>
+      <class name="com.electrolux.tests.LoginTestAnrdroid"/>
+    </classes>
+</test>
+<!-- <test name="iOS Test">
+    <parameter name="device" value="539e3ee5"></parameter>	
+  	<parameter name="app_package" value="com.curvefish.widgets.brightnesslevel"></parameter>	
+  	<parameter name="activity" value="com.curvefish.widgets.brightnesslevel.BrightnessSelect"></parameter>	
+  	<parameter name="version" value="6.0.1"></parameter>	
+  	<parameter name="appWaitActivity" value="SplashActivity, SplashActivity,OtherActivity, *, *.SplashActivity"></parameter>	
+  	<parameter name="appiumServer" value="http://127.0.0.1:4723/wd/hub"></parameter>
+    <classes>
+      <class name="com.indecomm.scripts.el.LoginTestiOS"/>
+    </classes>
+</test> -->
+</suite>
