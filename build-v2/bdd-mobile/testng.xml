@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="CrossDeviceSuite" parallel="tests" thread-count="5">
+<test name="Android Test">
+    <parameter name="device" value="192.168.153.128:5555"></parameter>	
+  	<parameter name="app_package" value="com.curvefish.widgets.brightnesslevel"></parameter>	
+  	<parameter name="activity" value="com.curvefish.widgets.brightnesslevel.BrightnessSelect"></parameter>	
+  	<parameter name="version" value="7.1.2"></parameter>	
+  	<parameter name="appiumServer" value="http://127.0.0.1:4723/wd/hub"></parameter>
+  	<parameter name="port" value="4724"></parameter>
+  	<parameter name="dvudid" value="192.168.153.128:5555"></parameter>
+    <classes>
+      <class name="com.electrolux.tests.LoginTestAnrdroid"/>
+    </classes>
+</test>
+<test name="Android Test2">
+    <parameter name="device" value="emulator-5554"></parameter>	
+  	<parameter name="app_package" value="com.curvefish.widgets.brightnesslevel"></parameter>	
+  	<parameter name="activity" value="com.curvefish.widgets.brightnesslevel.BrightnessSelect"></parameter>	
+  	<parameter name="version" value="9"></parameter>	
+  	<parameter name="appiumServer" value="http://127.0.0.1:4726/wd/hub"></parameter>
+  	<parameter name="port" value="4726"></parameter>
+  	<parameter name="dvudid" value="emulator-5554"></parameter>
+    <classes>
+      <class name="com.electrolux.tests.LoginTestAnrdroid"/>
+    </classes>
+</test>
+<!-- <test name="iOS Test">
+    <parameter name="device" value="539e3ee5"></parameter>	
+  	<parameter name="app_package" value="com.curvefish.widgets.brightnesslevel"></parameter>	
+  	<parameter name="activity" value="com.curvefish.widgets.brightnesslevel.BrightnessSelect"></parameter>	
+  	<parameter name="version" value="6.0.1"></parameter>	
+  	<parameter name="appWaitActivity" value="SplashActivity, SplashActivity,OtherActivity, *, *.SplashActivity"></parameter>	
+  	<parameter name="appiumServer" value="http://127.0.0.1:4723/wd/hub"></parameter>
+    <classes>
+      <class name="com.indecomm.scripts.el.LoginTestiOS"/>
+    </classes>
+</test> -->
+</suite>

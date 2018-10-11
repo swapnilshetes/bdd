@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [CrossDeviceSuite]" parallel="tests">
+  <test thread-count="5" name="Android Test2(failed)" parallel="tests">
+    <parameter name="activity" value="com.curvefish.widgets.brightnesslevel.BrightnessSelect"/>
+    <parameter name="port" value="4726"/>
+    <parameter name="app_package" value="com.curvefish.widgets.brightnesslevel"/>
+    <parameter name="dvudid" value="emulator-5554"/>
+    <parameter name="appiumServer" value="http://127.0.0.1:4726/wd/hub"/>
+    <parameter name="device" value="emulator-5554"/>
+    <parameter name="version" value="9"/>
+    <classes>
+      <class name="com.electrolux.tests.LoginTestAnrdroid">
+        <methods>
+          <include name="message_displayed_Login_Successfully"/>
+          <include name="user_Navigate_to_LogIn_Page"/>
+          <include name="deviceSetUp"/>
+          <include name="user_enters_UserName_and_Password"/>
+          <include name="user_is_on_Home_Page"/>
+        </methods>
+      </class> <!-- com.electrolux.tests.LoginTestAnrdroid -->
+    </classes>
+  </test> <!-- Android Test2(failed) -->
+  <test thread-count="5" name="Android Test(failed)" parallel="tests">
+    <parameter name="activity" value="com.curvefish.widgets.brightnesslevel.BrightnessSelect"/>
+    <parameter name="port" value="4724"/>
+    <parameter name="app_package" value="com.curvefish.widgets.brightnesslevel"/>
+    <parameter name="dvudid" value="192.168.153.128:5555"/>
+    <parameter name="appiumServer" value="http://127.0.0.1:4723/wd/hub"/>
+    <parameter name="device" value="192.168.153.128:5555"/>
+    <parameter name="version" value="7.1.2"/>
+    <classes>
+      <class name="com.electrolux.tests.LoginTestAnrdroid">
+        <methods>
+          <include name="message_displayed_Login_Successfully"/>
+          <include name="user_Navigate_to_LogIn_Page"/>
+          <include name="deviceSetUp"/>
+          <include name="user_enters_UserName_and_Password"/>
+          <include name="user_is_on_Home_Page"/>
+        </methods>
+      </class> <!-- com.electrolux.tests.LoginTestAnrdroid -->
+    </classes>
+  </test> <!-- Android Test(failed) -->
+</suite> <!-- Failed suite [CrossDeviceSuite] -->
