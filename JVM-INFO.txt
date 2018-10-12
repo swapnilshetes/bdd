@@ -1,0 +1,16 @@
+Junit 
+POM > execution > cucumber-jvm-parallel-plugin
+
+https://github.com/temyers/cucumber-jvm-parallel-plugin
+https://www.swtestacademy.com/how-to-use-wiremock-with-junit-5-and-rest-assured/
+
+
+Parallel
+https://testingbot.com/support/getting-started/parallel-junit.html
+https://stackoverflow.com/questions/43073605/appium-cucumber-and-junit-how-to-run-tests-in-parallel-on-multiple-devices
+
+
+GOOD info 
+https://qmetry.github.io/qaf/latest/creating_configuration_file.html
+
+https://automationrhapsody.com/running-cucumber-tests-in-parallel/
